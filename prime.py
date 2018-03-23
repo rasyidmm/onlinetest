@@ -8,5 +8,5 @@ def prime(angka):
     else:
         return "not prime"
 
-jj = prime(10)
+jj = prime(5000)
 print(jj)
