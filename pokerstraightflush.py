@@ -7,4 +7,4 @@ for i in range(36):
         SF+=1
     print(klx)
     klx.clear()
-print("Straight Flush= ",SF)
+print("Kombinasi Straight Flush= ",SF)
