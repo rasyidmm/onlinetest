@@ -15,27 +15,33 @@ def carijalan(jalan):
     for i in jalan:
         for x in i:
             if jalan[x][y+1] == 1 and jalan[x][y+2] ==1 and jalan[x][y+3] ==1:
-                print("jalan buntu")
+                print(jalan[x][y+3])
             elif jalan[x][y+1] == 1:
-                if jalan[x+1][y+1] == 1 and jalan[x+2][y+1] == 1 and jalan[x+3][y+1] == 1 and jalan[x+4][y+1]:
-                    print("jalan buntu")
+                print(jalan[x][y+1])
+                if jalan[x+1][y+1] == 1 and jalan[x+2][y+1] == 1 and jalan[x+3][y+1] == 1 and jalan[x+4][y+1] == 1:
+                    print(jalan[x+4][y+1])
                 elif jalan[x+1][y+1] == 1 and jalan[x+2][y+1] == 1 and jalan[x+3][y+1] == 1:
+                    print(jalan[x+3][y+1])
                     if jalan[x+3][y+1] == 1 and jalan[x+3][y+2] == 1 and jalan[x+3][y+3] == 1 and jalan[x+3][y+4] == 1 and jalan[x+3][y+5] == 1 and jalan[x+3][y+6] == 1 and jalan[x+3][y+7] == 1:
-                        print ("jalan buntu")
+                        print (jalan[x+3][y+7])
                     elif jalan[x+3][y+1] == 1 and jalan[x+3][y+2] == 1 and jalan[x+3][y+3] == 1 and jalan[x+3][y+4] == 1 and jalan[x+3][y+5] == 1 and jalan[x+3][y+6] == 1:
+                        print(jalan[x+3][y+6])
                         if jalan[x+3][y+6] == 1 and jalan[x+4][y+6] == 1 and jalan[x+5][y+6] == 1 and jalan[x+6][y+6] == 1:
-                            print("jalan buntu")
+                            print(jalan[x+6][y+6])
                         elif jalan[x+3][y+6] == 1 and jalan[x+4][y+6] == 1 and jalan[x+5][y+6] == 1:
+                            print(jalan[x+5][y+6])
                             if  jalan[x+5][y+6] == 1 and  jalan[x+5][y+7] == 1:
-                                print("jalan buntu")
+                                print(jalan[x+5][y+7])
                             elif  jalan[x+5][y+6] == 1 and  jalan[x+5][y+6-1] == 1 and  jalan[x+5][y+6-2] == 1:
-                                print("jalan buntu")
+                                print(jalan[x+5][y+6-2])
                             elif jalan[x+5][y+6] == 1 and  jalan[x+5][y+6-1] == 1:
+                                print(jalan[x+5][y+6-1])
                                 if jalan[x+5][y+6-1] == 1 and jalan[x+6][y+6-1] == 1 and jalan[x+7][y+6-1] == 1:
-                                    print ("jalan buntu")
+                                    print (jalan[x+7][y+6-1])
                                 elif jalan[x+5][y+6-1] == 1 and jalan[x+6][y+6-1] == 1:
+                                    print(jalan[x+6][y+6-1])
                                     if jalan[x+6][y+6-1] == 1 and jalan[x+6][y+6] == 1:
-                                        print("jalan buntu")
+                                        print(jalan[x+6][y+6])
                                     elif jalan[x+6][y+6-1] == 1 and jalan[x+6][y+6-2] == 1:
                                         print("finish")
 
